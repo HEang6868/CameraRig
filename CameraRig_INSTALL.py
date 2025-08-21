@@ -29,7 +29,7 @@ def onMayaDroppedPythonFile(*args):
             cmds.deleteUI(child)
 
     # Command that will run your tool when the button is clicked
-    cmd = 'import CameraRig.CameraRig'
+    cmd = 'import CameraRig.CameraRig as camRig; camRig.make_camera_rig()'
 
     # Add the button to the shelf
     cmds.shelfButton(
