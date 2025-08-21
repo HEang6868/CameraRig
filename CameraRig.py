@@ -1,7 +1,6 @@
 import maya.cmds as mc
 
 
-
 #Point values for custom control shapes.
 CAM_CTRL_PNTS = [[0.13385, 0.0, -10.18033], [-0.78016, 0.0, -9.22674], [-7.98651, 0.0, 0.17249], [-5.59785, 0.0, 7.85356], [0.16887, 0.0, 10.24221], [5.74337, 0.0, 7.93318], [8.71342, 0.0, 0.55654], [0.86941, 0.0, -9.55085], [0.86941, 0.0, -9.55085], [0.86941, 0.0, -9.55085], [0.86941, 0.0, -9.55085]]
 AIM_CTRL_PNTS = [[0.00012, 1.36504, -0.04559], [0.0, 1.28835, -1.17191], [0.0, 0.0, -1.73424], [0.0, -1.12465, -1.17191], [0.0, -1.68698, -0.04726], [0.0, -1.12465, 1.07739], [0.0, 0.0, 1.63972], [0.0, 1.28835, 1.07739], [-0.0012, 1.36509, -0.04661], [0.0012, 1.36505, -0.04893], [1.12769, 1.28227, -0.04726], [1.68698, 0.0, -0.04726], [1.12465, -1.12465, -0.04726], [0.0, -1.68698, -0.04726], [-1.12465, -1.12465, -0.04726], [-1.68698, 0.0, -0.04726], [-1.12465, 1.28835, -0.04726], [-9e-05, 1.36487, -0.04797]]
@@ -78,7 +77,6 @@ def make_camera_rig():
         for scale in offAttrs:
             mc.setAttr(ctrl+scale, lock=True, keyable=False, channelBox=False)
 
-    rotAttrs = [".rotateX", ".rotateY", ".rotateZ"]
-    for attr in rotAttrs:
-        mc.setAttr(aimCtrl+attr, lock=True, keyable=False, channelBox=False)
-
+rotAttrs = [".rotateX", ".rotateY", ".rotateZ"]
+for attr in rotAttrs:
+    mc.setAttr(aimCtrl+attr, lock=True, keyable=False, channelBox=False)
