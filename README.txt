@@ -6,3 +6,5 @@ INSTALLATION:
 - A button should be created in your "custom" shelf.
 
 Pressing the newly added button should build the rig.
+The controls in the rig are visible through the camera, but they hide themselves during playback.
+If I can find a way around this I'll be sure to add it.
