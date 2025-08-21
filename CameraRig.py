@@ -1,11 +1,5 @@
 import maya.cmds as mc
 
-#################
-###   RESET   ###
-#################
-#mc.file("CameraRig.mb", open=True, force=True)
-mc.select(all=True)
-mc.delete()
 
 #Point values for custom control shapes.
 CAM_CTRL_PNTS = [[3.0, 0.0, -3.0], [0.0, 0.0, 15.03715], [-3.0, 0.0, -3.0], 
@@ -112,4 +106,3 @@ def make_camera_rig():
     mc.select(clear=True)
 
 
-make_camera_rig()
